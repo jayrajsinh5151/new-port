@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+nav {
+  height: 44px;
+  background-color: #000000;
+}
+
+nav .nav-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav .nav-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+nav .nav-wrapper ul li {
+  color: #ffffff;
+  line-height: 44px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 10px 0 10px;
+  display: inline-block;
+}
+
+nav .nav-wrapper ul li:hover {
+  background-color: #b5cff5;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+nav .nav-wrapper .download-btn {
+  background-color: #6fd1bd;
+  line-height: 44px;
+  border: none;
+  height: 44px;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  nav .nav-wrapper .download-btn {
+    /* display: none; */
+    display: none;
+  }
+}
+
+nav .nav-wrapper .download-btn:hover {
+  background-color: salmon;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  background-color: #d3d3d387;
+  height: 250px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.myName {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myName:hover {
+  text-shadow: -2px 2px red;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.contacts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  list-style: none;
+  margin-top: 170px;
+}
+
+.contacts ul li {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 280px;
+  text-align: right;
+}
+
+.contacts ul li u:hover {
+  -webkit-text-decoration-color: #d16fc9;
+          text-decoration-color: #d16fc9;
+  cursor: pointer;
+}
